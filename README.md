@@ -56,11 +56,75 @@ Route | Method | Descriptions
 ]
 ```
 
-3. Find by name entity
+**3. Find by name entity**
 
-4. Find by version entity
+```request``` 
+```html 
+/frameworks/name/ReactJS
+```
 
-5. Update entity
+```response``` 
+```json
+[
+    {
+        "id": 1,
+        "name": "ReactJS",
+        "version": "1.0.0",
+        "deprecationDate": "2019-11-01",
+        "hypeLevel": 9
+    },
+    {
+        "id": 3,
+        "name": "ReactJS",
+        "version": "3.0.0",
+        "deprecationDate": "2019-11-01",
+        "hypeLevel": 9
+    }
+]
+```
 
-6. Deleting entity
+**4. Find by version entity**
+
+```request``` 
+```html 
+/frameworks/version/1.0.0
+```
+
+```response``` 
+```json
+[
+    {
+        "id": 1,
+        "name": "ReactJS",
+        "version": "1.0.0",
+        "deprecationDate": "2019-11-01",
+        "hypeLevel": 9
+    }
+]
+```
+
+**5. Update entity**
+
+```request``` 
+```json 
+ {
+        "id": 1,
+        "name": "ReactJS",
+        "version": "2.0.0",
+        "deprecationDate": "2020-11-01",
+        "hypeLevel": 1
+}
+```
+
+```response``` 
+```json
+{
+    "recordId": 1,
+    "result": 0,
+    "errorText": ""
+}
+```
+
+**6. Deleting entity**
+
 
