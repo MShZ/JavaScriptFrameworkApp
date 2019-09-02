@@ -127,4 +127,16 @@ Route | Method | Descriptions
 
 **6. Deleting entity**
 
+```request``` 
+```html 
+/framework/delete/id/1
+```
 
+```response``` 
+```json
+{
+    "recordId": 0,
+    "result": 0,
+    "errorText": ""
+}
+```
