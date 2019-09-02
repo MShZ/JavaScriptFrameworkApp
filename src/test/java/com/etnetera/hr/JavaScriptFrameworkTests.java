@@ -135,7 +135,10 @@ public class JavaScriptFrameworkTests {
         ResponseEntity<ResponseModel> response = javaScriptFrameworkController.delete(id);
 
         //then
+        Optional<JavaScriptFramework> findItem = javaScriptFrameworkRepository.findById(1L);
+
         Assert.assertEquals(HttpStatus.OK, response.getStatusCode());
+        Assert.assertFalse(findItem.isPresent());
     }
 
 

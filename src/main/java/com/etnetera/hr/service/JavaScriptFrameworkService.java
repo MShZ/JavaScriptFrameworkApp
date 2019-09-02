@@ -64,6 +64,6 @@ public class JavaScriptFrameworkService {
         repository.deleteById(id);
         LOG.info("DELETE");
 
-        return new ResponseEntity<>(new ResponseModel(0, ""), HttpStatus.OK);
+        return new ResponseEntity<>(new ResponseModel(0L,0, ""), HttpStatus.OK);
     }
 }

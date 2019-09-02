@@ -10,11 +10,6 @@ public class ResponseModel implements Serializable {
     private Integer result; //Result of operation: 0 success, 1 error
     private String errorText;
 
-    public ResponseModel(Integer result, String errorText) {
-        this.result = result;
-        this.errorText = errorText;
-    }
-
     public ResponseModel(Long recordId, Integer result, String errorText) {
         this.recordId = recordId;
         this.result = result;
